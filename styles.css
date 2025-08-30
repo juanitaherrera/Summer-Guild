@@ -1233,3 +1233,68 @@ body, html {
         height: 60px;
     }
 }
+
+/* Header Icons */
+.header-icon {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.floreo-icon {
+    stroke: #6154E0; /* Floreo Purple */
+    stroke-width: 1.5;
+    fill: none;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(97, 84, 224, 0.1));
+}
+
+.floreo-icon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(97, 84, 224, 0.2));
+}
+
+.floreo-icon.large {
+    width: 80px;
+    height: 80px;
+    stroke: #FFFFFF; /* White for CTA section */
+}
+
+.floreo-icon.small {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 1rem;
+}
+
+/* CTA Icon */
+.cta-icon {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-icon .floreo-icon {
+    stroke: #FFFFFF; /* White */
+    filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.2));
+}
+
+.cta-icon .floreo-icon:hover {
+    filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.3));
+}
+
+/* Stat Icons */
+.stat-icon {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.stat-icon .floreo-icon {
+    stroke: #6154E0; /* Floreo Purple */
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.stat-icon .floreo-icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
