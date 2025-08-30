@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #ffffff;
+    color: #000000; /* Black */
+    background-color: #FFFFFF; /* White */
 }
 
 body, html {
@@ -24,8 +24,8 @@ body, html {
 .btn-primary:active,
 .btn-primary:focus {
   outline: none;
-  box-shadow: 0 8px 25px rgba(51, 102, 255, 0.3); /* keeps same shadow as hover */
-  background: #2952CC; /* matches hover background */
+  box-shadow: 0 8px 25px rgba(97, 84, 224, 0.3); /* Floreo Purple shadow */
+  background: #2A1488; /* Royal Purple */
   border-radius: 50px;
   padding: 1rem 2rem;
   font-size: 1rem;
@@ -224,7 +224,7 @@ body, html {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #333;
+    color: #000000; /* Black */
     font-style: italic;
 }
 
@@ -243,14 +243,14 @@ body, html {
 
 .nav a {
     text-decoration: none;
-    color: #333;
+    color: #000000; /* Black */
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
 }
 
 .nav a:hover {
-    color: #3366FF;
+    color: #6154E0; /* Floreo Purple */
 }
 
 .nav a::after {
@@ -260,7 +260,7 @@ body, html {
     height: 2px;
     bottom: -5px;
     left: 50%;
-    background-color: #3366FF;
+    background-color: #6154E0; /* Floreo Purple */
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -273,7 +273,7 @@ body, html {
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #E3F2FF 0%, #FFFFFF 100%); /* Ice Gray to White */
     overflow: hidden;
     position: relative;
 }
@@ -295,19 +295,19 @@ body, html {
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
+    color: #000000; /* Black */
 }
 
 .hero-text p {
     font-size: 1.2rem;
-    color: #666;
+    color: #BFCCDB; /* Medium Gray */
     margin-bottom: 2rem;
     line-height: 1.6;
 }
 
 .btn-primary {
-    background: #3366FF;
-    color: white;
+    background: #6154E0; /* Floreo Purple */
+    color: #FFFFFF; /* White */
     border: none;
     padding: 1rem 2rem;
     border-radius: 50px;
@@ -320,15 +320,15 @@ body, html {
 }
 
 .btn-primary:hover {
-    background: #2952CC;
+    background: #2A1488; /* Royal Purple */
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(51, 102, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(97, 84, 224, 0.3);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #3366FF;
-    border: 2px solid #3366FF;
+    color: #6154E0; /* Floreo Purple */
+    border: 2px solid #6154E0; /* Floreo Purple */
     padding: 1rem 2rem;
     border-radius: 50px;
     font-size: 1rem;
@@ -340,8 +340,8 @@ body, html {
 }
 
 .btn-secondary:hover {
-    background: #3366FF;
-    color: white;
+    background: #6154E0; /* Floreo Purple */
+    color: #FFFFFF; /* White */
     transform: translateY(-2px);
 }
 
@@ -366,7 +366,7 @@ body, html {
 .shape-1 {
     width: 120px;
     height: 120px;
-    background: #4CAF50;
+    background: #00A67D; /* Green */
     top: 10%;
     right: 20%;
     animation-delay: -0.5s;
@@ -375,7 +375,7 @@ body, html {
 .shape-2 {
     width: 80px;
     height: 80px;
-    background: #FF5722;
+    background: #FF532E; /* Pomelo */
     top: 60%;
     right: 60%;
     border-radius: 50%;
@@ -385,7 +385,7 @@ body, html {
 .shape-3 {
     width: 100px;
     height: 100px;
-    background: #FFEB3B;
+    background: #F7FF00; /* Yellow */
     top: 30%;
     left: 10%;
     animation-delay: -3.5s;
@@ -394,7 +394,7 @@ body, html {
 .shape-4 {
     width: 60px;
     height: 60px;
-    background: #2196F3;
+    background: #23C8CE; /* Teal */
     bottom: 20%;
     right: 10%;
     border-radius: 50%;
@@ -417,12 +417,12 @@ body, html {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #1a1a1a;
+    color: #000000; /* Black */
 }
 
 .section-header p {
     font-size: 1.1rem;
-    color: #666;
+    color: #BFCCDB; /* Medium Gray */
     max-width: 600px;
     margin: 0 auto;
 }
@@ -430,7 +430,7 @@ body, html {
 /* Overview Section */
 .overview {
     padding: 80px 0;
-    background: #f8f9ff;
+    background: #E5EAF0; /* Lt Gray */
 }
 
 .stats-grid {
@@ -440,7 +440,7 @@ body, html {
 }
 
 .stat-card {
-    background: white;
+    background: #FFFFFF; /* White */
     padding: 2.5rem 1.5rem;
     border-radius: 20px;
     text-align: center;
@@ -456,13 +456,13 @@ body, html {
 .stat-number {
     font-size: 3rem;
     font-weight: 700;
-    color: #3366FF;
+    color: #6154E0; /* Floreo Purple */
     margin-bottom: 0.5rem;
 }
 
 .stat-label {
     font-size: 1.1rem;
-    color: #666;
+    color: #BFCCDB; /* Medium Gray */
     font-weight: 500;
 }
 
@@ -478,7 +478,7 @@ body, html {
 }
 
 .class-card {
-    background: white;
+    background: #FFFFFF; /* White */
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -495,7 +495,7 @@ body, html {
     width: 100%;
     height: 200px;
     overflow: hidden;
-    background: #f0f0f0;
+    background: #E5EAF0; /* Lt Gray */
 }
 
 .video-container video {
@@ -512,11 +512,11 @@ body, html {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #1a1a1a;
+    color: #000000; /* Black */
 }
 
 .class-info p {
-    color: #666;
+    color: #BFCCDB; /* Medium Gray */
     margin-bottom: 1rem;
     line-height: 1.5;
 }
@@ -534,19 +534,19 @@ body, html {
 }
 
 .duration {
-    background: rgba(51, 102, 255, 0.1);
-    color: #3366FF;
+    background: rgba(97, 84, 224, 0.1); /* Floreo Purple with opacity */
+    color: #6154E0; /* Floreo Purple */
 }
 
 .level {
-    background: rgba(76, 175, 80, 0.1);
-    color: #4CAF50;
+    background: rgba(0, 166, 125, 0.1); /* Green with opacity */
+    color: #00A67D; /* Green */
 }
 
 /* Instructors Section */
 .instructors {
     padding: 80px 0;
-    background: #f8f9ff;
+    background: #E5EAF0; /* Lt Gray */
 }
 
 .instructors-grid {
@@ -556,7 +556,7 @@ body, html {
 }
 
 .instructor-card {
-    background: white;
+    background: #FFFFFF; /* White */
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -578,19 +578,19 @@ body, html {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #3366FF;
+    border: 4px solid #6154E0; /* Floreo Purple */
 }
 
 .instructor-info h3 {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 0.3rem;
-    color: #1a1a1a;
+    color: #000000; /* Black */
     text-align: center;
 }
 
 .instructor-info .title {
-    color: #3366FF;
+    color: #6154E0; /* Floreo Purple */
     font-weight: 500;
     text-align: center;
     margin-bottom: 1rem;
@@ -598,7 +598,7 @@ body, html {
 
 .instructor-info blockquote {
     font-style: italic;
-    color: #555;
+    color: #BFCCDB; /* Medium Gray */
     line-height: 1.6;
     margin-bottom: 1rem;
     text-align: center;
@@ -612,8 +612,8 @@ body, html {
 }
 
 .tag {
-    background: rgba(51, 102, 255, 0.1);
-    color: #3366FF;
+    background: rgba(97, 84, 224, 0.1); /* Floreo Purple with opacity */
+    color: #6154E0; /* Floreo Purple */
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -632,7 +632,7 @@ body, html {
 }
 
 .student-card {
-    background: white;
+    background: #FFFFFF; /* White */
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -651,7 +651,7 @@ body, html {
 
 .student-quote blockquote {
     font-style: italic;
-    color: #555;
+    color: #BFCCDB; /* Medium Gray */
     line-height: 1.6;
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
@@ -663,22 +663,22 @@ body, html {
 }
 
 .student-quote cite strong {
-    color: #1a1a1a;
+    color: #000000; /* Black */
     font-weight: 600;
     display: block;
     margin-bottom: 0.3rem;
 }
 
 .student-quote cite span {
-    color: #666;
+    color: #BFCCDB; /* Medium Gray */
     font-size: 0.9rem;
 }
 
 /* CTA Section */
 .cta {
     padding: 80px 0;
-    background: linear-gradient(135deg, #3366FF 0%, #2952CC 100%);
-    color: white;
+    background: linear-gradient(135deg, #6154E0 0%, #2A1488 100%); /* Floreo Purple to Royal Purple */
+    color: #FFFFFF; /* White */
 }
 
 .cta-content {
@@ -706,8 +706,8 @@ body, html {
 
 /* Footer */
 .CJF7A2 {
-    background: #2f2e2e;
-    color: white;
+    background: #000000; /* Black */
+    color: #FFFFFF; /* White */
     padding: 30px 0 15px;
     font-family: 'Inter', sans-serif;
 }
@@ -746,7 +746,7 @@ body, html {
 }
 
 .comp-ikzfsfcb p {
-    color: #FFFFFF;
+    color: #FFFFFF; /* White */
     font-size: 11px;
     margin: 0;
 }
@@ -874,4 +874,362 @@ body, html {
 .comp-il0yizug a:hover,
 .comp-let1nb171 a:hover {
     opacity: 0.7;
+}
+
+/* Section Divider */
+.section-divider {
+    height: 4px;
+    background: linear-gradient(90deg, #6154E0 0%, #FF532E 25%, #F7FF00 50%, #23C8CE 75%, #00A67D 100%);
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: divider-shine 3s infinite;
+}
+
+@keyframes divider-shine {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Student Reviews Section - Updated with Floreo Colors */
+.students {
+    padding: 80px 0;
+    background: #FFFFFF; /* White */
+}
+
+.reviews-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Prompt Selector */
+.prompt-selector {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.prompt-selector h3 {
+    font-size: 1.2rem;
+    color: #000000; /* Black */
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.prompt-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.prompt-tab {
+    background: #E5EAF0; /* Lt Gray */
+    border: 2px solid transparent;
+    color: #BFCCDB; /* Medium Gray */
+    padding: 0.8rem 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.prompt-tab:hover {
+    background: #6154E0; /* Floreo Purple */
+    color: #FFFFFF; /* White */
+    transform: translateY(-2px);
+}
+
+.prompt-tab.active {
+    background: #6154E0; /* Floreo Purple */
+    color: #FFFFFF; /* White */
+    border-color: #2A1488; /* Royal Purple */
+}
+
+.tab-icon {
+    font-size: 1.2rem;
+}
+
+.tab-text {
+    font-size: 0.9rem;
+}
+
+/* Active Prompt Display */
+.active-prompt {
+    text-align: center;
+}
+
+.prompt-header {
+    margin-bottom: 2rem;
+}
+
+.prompt-header h2 {
+    font-size: 1.8rem;
+    color: #000000; /* Black */
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.prompt-header p {
+    color: #BFCCDB; /* Medium Gray */
+    font-size: 1rem;
+}
+
+/* Review Cards Container */
+.review-cards-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    margin: 2rem 0;
+}
+
+.review-card {
+    position: absolute;
+    background: #FFFFFF; /* White */
+    border: 2px solid #E5EAF0; /* Lt Gray */
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    opacity: 0.6;
+    transform: scale(0.9) translateY(20px);
+    z-index: 1;
+}
+
+.review-card.active {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    z-index: 10;
+    border-color: #6154E0; /* Floreo Purple */
+    box-shadow: 0 20px 40px rgba(97, 84, 224, 0.15);
+}
+
+.review-card:hover {
+    transform: scale(1.02) translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+.card-character {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.character-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6154E0; /* Floreo Purple */
+    animation: character-bounce 2s ease-in-out infinite;
+}
+
+@keyframes character-bounce {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.review-card p {
+    color: #000000; /* Black */
+    font-style: italic;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Card Navigation */
+.card-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.nav-btn {
+    background: #6154E0; /* Floreo Purple */
+    color: #FFFFFF; /* White */
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn:hover {
+    background: #2A1488; /* Royal Purple */
+    transform: scale(1.1);
+}
+
+.nav-btn:disabled {
+    background: #BFCCDB; /* Medium Gray */
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Card Indicators */
+.card-indicators {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #E5EAF0; /* Lt Gray */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: #6154E0; /* Floreo Purple */
+    transform: scale(1.2);
+}
+
+.indicator:hover {
+    background: #6154E0; /* Floreo Purple */
+}
+
+/* Footer - Updated with Floreo Colors */
+.footer {
+    background: #000000; /* Black */
+    color: #FFFFFF; /* White */
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FFFFFF; /* White */
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #6154E0; /* Floreo Purple */
+    color: #FFFFFF; /* White */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: #2A1488; /* Royal Purple */
+    transform: translateY(-2px);
+}
+
+.footer-column h3 {
+    color: #FFFFFF; /* White */
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    color: #BFCCDB; /* Medium Gray */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #6154E0; /* Floreo Purple */
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #BFCCDB; /* Medium Gray */
+    text-align: center;
+    color: #BFCCDB; /* Medium Gray */
+    font-size: 0.9rem;
+}
+
+/* Responsive Design for Reviews */
+@media (max-width: 768px) {
+    .prompt-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .prompt-tab {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .review-card {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .prompt-selector h3 {
+        font-size: 1rem;
+    }
+    
+    .prompt-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .review-card {
+        padding: 1rem;
+    }
+    
+    .character-image {
+        width: 60px;
+        height: 60px;
+    }
 }
