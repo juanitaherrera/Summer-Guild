@@ -14,6 +14,8 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 body, html {
@@ -296,10 +298,10 @@ body, html {
     width: 100%;
 }
 
-/* Hero Section - Original background */
+/* Hero Section - Clean white background */
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #E3F2FF 0%, #FFFFFF 100%);
+    background: #ffffff;
     overflow: hidden;
     position: relative;
 }
@@ -437,10 +439,10 @@ body, html {
     margin: 0 auto;
 }
 
-/* Overview Section - Original background */
+/* Overview Section - Smooth gradient background */
 .overview {
     padding: 80px 0;
-    background: #E5EAF0;
+    background: linear-gradient(135deg, #f8faff 0%, #f0f4ff 50%, #e8f0ff 100%);
 }
 
 .stats-grid {
@@ -477,10 +479,10 @@ body, html {
     font-weight: 500;
 }
 
-/* Classes Section */
+/* Classes Section - Smooth gradient background */
 .classes {
     padding: 80px 0;
-    background: #ffffff;
+    background: linear-gradient(135deg, #fff8f0 0%, #fff0e8 50%, #ffe8e0 100%);
 }
 
 .classes-grid {
@@ -555,10 +557,10 @@ body, html {
     color: #00A67D; /* Green */
 }
 
-/* Instructors Section - Original background */
+/* Instructors Section - Smooth gradient background */
 .instructors {
     padding: 80px 0;
-    background: #E5EAF0;
+    background: linear-gradient(135deg, #fff8ff 0%, #f8f0ff 50%, #f0e8ff 100%);
 }
 
 .instructors-grid {
@@ -632,10 +634,10 @@ body, html {
     font-weight: 500;
 }
 
-/* Students Section - Fixed and styled to match website */
+/* Students Section - Smooth gradient background */
 .students {
     padding: 80px 0;
-    background: #ffffff;
+    background: linear-gradient(135deg, #f0fff8 0%, #e8fff0 50%, #e0ffe8 100%);
 }
 
 .reviews-grid {
@@ -756,11 +758,11 @@ body, html {
     font-family: serif;
 }
 
-/* CTA Section */
+/* CTA Section - Enhanced gradient */
 .cta {
     padding: 80px 0;
-    background: linear-gradient(135deg, #6154E0 0%, #2A1488 100%); /* Floreo Purple to Royal Purple */
-    color: #FFFFFF; /* White */
+    background: linear-gradient(135deg, #6154E0 0%, #4A42B8 50%, #2A1488 100%);
+    color: #FFFFFF;
 }
 
 .cta-content {
