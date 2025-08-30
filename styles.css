@@ -620,58 +620,136 @@ body, html {
     font-weight: 500;
 }
 
-/* Students Section */
+/* Students Section - Updated Review Style */
 .students {
     padding: 80px 0;
-}
-
-.students-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.student-card {
     background: #FFFFFF; /* White */
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background: #FFFFFF; /* White */
+    border: 2px solid;
+    border-image: linear-gradient(135deg, #6154E0 0%, #00A67D 100%) 1;
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.student-card:hover {
+.review-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 40px rgba(97, 84, 224, 0.15);
+}
+
+.review-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #6154E0 0%, #FF532E 25%, #F7FF00 50%, #23C8CE 75%, #00A67D 100%);
+}
+
+/* Review Header */
+.review-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.quote-icon {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 3rem;
+    color: #6154E0; /* Floreo Purple */
+    font-weight: bold;
+    line-height: 1;
+    opacity: 0.8;
 }
 
 .student-avatar {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.student-quote blockquote {
-    font-style: italic;
-    color: #BFCCDB; /* Medium Gray */
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+.avatar-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6154E0; /* Floreo Purple */
+    background: #E5EAF0; /* Lt Gray fallback */
 }
 
-.student-quote cite {
-    display: block;
+.student-info {
     text-align: center;
 }
 
-.student-quote cite strong {
+.student-name {
+    font-size: 1.1rem;
+    font-weight: 700;
     color: #000000; /* Black */
-    font-weight: 600;
-    display: block;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
 }
 
-.student-quote cite span {
-    color: #BFCCDB; /* Medium Gray */
-    font-size: 0.9rem;
+/* Star Rating */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.star {
+    color: #F7FF00; /* Yellow */
+    font-size: 1.2rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Review Content */
+.review-content {
+    text-align: center;
+}
+
+.review-content blockquote {
+    font-style: italic;
+    color: #000000; /* Black */
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0;
+    position: relative;
+}
+
+.review-content blockquote::before {
+    content: '"';
+    font-size: 2rem;
+    color: #6154E0; /* Floreo Purple */
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    opacity: 0.3;
+}
+
+.review-content blockquote::after {
+    content: '"';
+    font-size: 2rem;
+    color: #6154E0; /* Floreo Purple */
+    position: absolute;
+    bottom: -20px;
+    right: -5px;
+    opacity: 0.3;
 }
 
 /* CTA Section */
@@ -1193,44 +1271,47 @@ body, html {
 }
 
 /* Responsive Design for Reviews */
-@media (max-width: 768px) {
-    .prompt-tabs {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 1024px) {
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
-    
-    .prompt-tab {
-        width: 100%;
-        max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 500px;
     }
     
     .review-card {
-        max-width: 90%;
         padding: 1.5rem;
     }
     
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .quote-icon {
+        font-size: 2.5rem;
+        top: -8px;
+        left: -8px;
+    }
+    
+    .avatar-image {
+        width: 70px;
+        height: 70px;
     }
 }
 
 @media (max-width: 480px) {
-    .prompt-selector h3 {
-        font-size: 1rem;
-    }
-    
-    .prompt-header h2 {
-        font-size: 1.4rem;
-    }
-    
     .review-card {
         padding: 1rem;
     }
     
-    .character-image {
-        width: 60px;
-        height: 60px;
+    .student-name {
+        font-size: 1rem;
+    }
+    
+    .review-content blockquote {
+        font-size: 0.9rem;
     }
 }
 
