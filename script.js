@@ -4,6 +4,23 @@ const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav a');
 const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
 
+// Add click functionality for the "Explore the Experience" button
+document.addEventListener('DOMContentLoaded', function() {
+    const exploreButton = document.querySelector('.btn-primary');
+    if (exploreButton && exploreButton.textContent.includes('Explore the Experience')) {
+        exploreButton.addEventListener('click', function() {
+            // Smooth scroll to the overview section
+            const overviewSection = document.getElementById('overview');
+            if (overviewSection) {
+                overviewSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    }
+});
+
 // Draggable circles functionality for multiple elements
 const draggableElements = document.querySelectorAll('.draggable-bg');
 let isDragging = false;
